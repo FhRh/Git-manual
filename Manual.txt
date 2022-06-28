@@ -2,42 +2,42 @@
 1. 깃허브에 새로운 repository를 생성한다.
 2. cmd를 켠다
 3. cd 명령어를 이용해 로컬저장소로 지정할 폴더로 이동
-4. git init 						//컴퓨터내의 지정한 폴더를 명령어를 통해 로컬저장소로 지정
-5. git add [파일이름] 				//커밋할 파일을 인덱스에 추가한다.(인덱스는 임시로 파일을 저장할 위치)
-6. git commit -m "comments to add" 			//부가적인 설명과 함께 인덱스에 저장된 파일을 커밋한다.
-7. git status					//잘 커밋이 되었는지 확인
-8. git remote add origin [원격저장소 주소]		//원격저장소의 정보를 추가한다. 주소는 https://github.com/[이름]/[repo이름].git 형식으로 작성
-9. git push origin master 				//master branch에 커밋한 파일을 푸쉬한다.
+4. git init 						                               //컴퓨터내의 지정한 폴더를 명령어를 통해 로컬저장소로 지정
+5. git add [파일이름] 				                         //커밋할 파일을 인덱스에 추가한다.(인덱스는 임시로 파일을 저장할 위치)
+6. git commit -m "comments to add" 			              //부가적인 설명과 함께 인덱스에 저장된 파일을 커밋한다.
+7. git status					                                //잘 커밋이 되었는지 확인
+8. git remote add origin [원격저장소 주소]		          //원격저장소의 정보를 추가한다. 주소는 https://github.com/[이름]/[repo이름].git 형식으로 작성
+9. git push origin master 				                    //master branch에 커밋한 파일을 푸쉬한다.
 
 브랜치에서 푸쉬
-1. git branch					//현재 브랜치 목록을 살펴본다.(현재 위치한 브랜치에는 *가 붙는다.)
-2. git checkout -b subdir01				//subdir01인 브랜치를 생성함과 동시에 이동	
-3. git branch					//잘 생성되었는지 확인
-4. git add [파일이름]					//커밋할 파일 지정
-5. git commit -m "comments t oadd"			//커밋
-6. git push origin subdir01				//푸쉬 (푸쉬할때는 브랜치의 이름을 지정하는것으로 함)
+1. git branch					                                //현재 브랜치 목록을 살펴본다.(현재 위치한 브랜치에는 *가 붙는다.)
+2. git checkout -b subdir01				                    //subdir01인 브랜치를 생성함과 동시에 이동	
+3. git branch					                                //잘 생성되었는지 확인
+4. git add [파일이름]					                         //커밋할 파일 지정
+5. git commit -m "comments t oadd"			              //커밋
+6. git push origin subdir01				                    //푸쉬 (푸쉬할때는 브랜치의 이름을 지정하는것으로 함)
 
 브랜치에서 풀
-1. git checkout subdir01 				//pull하기 위한 브랜치로 이동
-2. git pull						//위치해있는 폴더에 지정한 브랜치의 파일을 가져옴
+1. git checkout subdir01 				                      //pull하기 위한 브랜치로 이동
+2. git pull						                                //위치해있는 폴더에 지정한 브랜치의 파일을 가져옴
 
 브랜치 병합
-1. git checkout master				//병합의 기준이될 브랜치로 이동
-2. git merger subdir01				//병합할 브랜치를 지정하며 병합
-3. git push origin master				//푸쉬하며 수정내용 저장
+1. git checkout master				                        //병합의 기준이될 브랜치로 이동
+2. git merger subdir01				                        //병합할 브랜치를 지정하며 병합
+3. git push origin master				                      //푸쉬하며 수정내용 저장
 
-git init						//해당폴더를 로컬저장소로 지정
-git add [파일이름]					//커밋하기 위한 파일을 인덱스에 추가
-git commit -m "comments to add"			//인덱스에 추가된 파일을 부가설명과 함께 커밋
-git status						//커밋된 저장소의 정보 전달
-git remote add origin [원격저장소 주소]			//원격저장소의 정보를 전달
-git push origin master				//커밋한 내용을 master브랜치에 푸쉬
-git branch						//현재 브랜치목록 표시
-git branch subdir01					//subdir01라는 이름의 브랜치 생성
-git checkout subdir01				//subdir01브랜치로 이동
-git checkout -b subdir01				//subdir01브랜치를 생성하며 해당 위치로 이동
-git merge subdir01					//현재 위치한 브랜치로 지정한 브랜치를 병합
-git branch -d subdir01				//지정한 브랜치를 삭제
+git init						                                  //해당폴더를 로컬저장소로 지정
+git add [파일이름]					                          //커밋하기 위한 파일을 인덱스에 추가
+git commit -m "comments to add"			                 //인덱스에 추가된 파일을 부가설명과 함께 커밋
+git status						                                //커밋된 저장소의 정보 전달
+git remote add origin [원격저장소 주소]			          //원격저장소의 정보를 전달
+git push origin master				                        //커밋한 내용을 master브랜치에 푸쉬
+git branch						                                //현재 브랜치목록 표시
+git branch subdir01					                          //subdir01라는 이름의 브랜치 생성
+git checkout subdir01				                          //subdir01브랜치로 이동
+git checkout -b subdir01				                      //subdir01브랜치를 생성하며 해당 위치로 이동
+git merge subdir01					                          //현재 위치한 브랜치로 지정한 브랜치를 병합
+git branch -d subdir01				                        //지정한 브랜치를 삭제
 
 
 

@@ -23,14 +23,22 @@
 
 브랜치 병합
 1. git checkout master				                        //병합의 기준이될 브랜치로 이동
-2. git merger subdir01				                        //병합할 브랜치를 지정하며 병합
+2. git merge subdir01				                        //병합할 브랜치를 지정하며 병합
 3. git push origin master				                      //푸쉬하며 수정내용 저장
 
+#commit
 git init						                                  //해당폴더를 로컬저장소로 지정
 git add [파일이름]					                          //커밋하기 위한 파일을 인덱스에 추가
 git commit -m "comments to add"			                 //인덱스에 추가된 파일을 부가설명과 함께 커밋
 git status						                                //커밋된 저장소의 정보 전달
+
+#remote
 git remote add origin [원격저장소 주소]			          //원격저장소의 정보를 전달
+git remote                                            //원격 저장소의 이름 목록을 표시
+git remote -v                                         //원격 저장소에 대한 자세한 목록 보기
+git remote rm [원격저장소 이름]                        //원격 저장소 제거
+
+#branch & push
 git push origin master				                        //커밋한 내용을 master브랜치에 푸쉬
 git branch						                                //현재 브랜치목록 표시
 git branch subdir01					                          //subdir01라는 이름의 브랜치 생성
@@ -39,6 +47,7 @@ git checkout -b subdir01				                      //subdir01브랜치를 생성�
 git merge subdir01					                          //현재 위치한 브랜치로 지정한 브랜치를 병합
 git branch -d subdir01				                        //지정한 브랜치를 삭제
 
+git clone                                             //기존 원격저장소를 위치한 로컬에 다운로드
 
 
 

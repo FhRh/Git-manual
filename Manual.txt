@@ -1,3 +1,7 @@
+깃 버전확인
+1.cmd를 켠다
+2.git --version 입력
+
 커밋, 푸쉬 방법
 1. 깃허브에 새로운 repository를 생성한다.
 2. cmd를 켠다

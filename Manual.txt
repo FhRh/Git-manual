@@ -27,8 +27,8 @@
 
 브랜치 병합
 1. git checkout master				                //병합의 기준이될 브랜치로 이동
-2. git merge subdir01				                //병합할 브랜치를 지정하며 병합
-3. git push origin master				        //푸쉬하며 수정내용 저장
+2. git merge subdir01				                //병합할 브랜치를 지정하며 병합                                      
+3. git push origin master				        //푸쉬하며 수정내용 저장	
 
 #commit
 git init						        //해당폴더를 로컬저장소로 지정

@@ -46,6 +46,7 @@ git remote rm [원격저장소 이름]                        	  //원격 저장
 #branch & push
 git push origin master				                //커밋한 내용을 master브랜치에 푸쉬
 git branch						        //현재 브랜치목록 표시
+git branch -r                       //해당 원격저장소의 다른 브랜치목록을 모두 표시
 git branch subdir01					        //subdir01라는 이름의 브랜치 생성
 git checkout subdir01				                //subdir01브랜치로 이동
 git checkout -b subdir01				        //subdir01브랜치를 생성하며 해당 위치로 이동

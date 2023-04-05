@@ -52,6 +52,7 @@ git checkout subdir01				                //subdir01브랜치로 이동
 git checkout -b subdir01				        //subdir01브랜치를 생성하며 해당 위치로 이동
 git merge subdir01					        //현재 위치한 브랜치로 지정한 브랜치를 병합
 git branch -d subdir01				                //지정한 브랜치를 삭제
+git push origin --delete [브랜치 이름]                          //원격저장소의 브랜치 삭제
 
 git clone https://github.com/FhRh/Git-manual.git           	//기존 원격저장소를 위치한 로컬에 다운로드
 

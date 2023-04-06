@@ -22,8 +22,9 @@
 6. git push origin subdir01				        //푸쉬 (푸쉬할때는 브랜치의 이름을 지정하는것으로 함)
 
 브랜치에서 풀
-1. git checkout subdir01 				        //pull하기 위한 브랜치로 이동	
-2. git pull						        //위치해있는 폴더에 지정한 브랜치의 파일을 가져옴
+git checkout subdir01 				                //pull하기 위한 브랜치로 이동	
+git pull						        //위치해있는 폴더에 지정한 브랜치의 파일을 가져옴
+git pull origin <branch name>                                   //특정 브랜치를 pull
 
 브랜치 병합
 1. git checkout master				                //병합의 기준이될 브랜치로 이동

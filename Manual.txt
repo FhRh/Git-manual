@@ -26,6 +26,11 @@ git checkout subdir01 				                //pull하기 위한 브랜치로 이�
 git pull						        //위치해있는 폴더에 지정한 브랜치의 파일을 가져옴
 git pull origin <branch name>                                   //특정 브랜치를 pull
 
+원격저장소의 브랜치를 그대로 가져오기
+1.폴더를 비운다.
+2.git reset --hard HEAD                                         //로컬저장소의 추적을 끊음
+3.git pull origin [branch name]                                 //원격저장소의 특정 브랜치를 그대로 가져옴
+
 브랜치 병합
 1. git checkout master				                //병합의 기준이될 브랜치로 이동
 2. git merge subdir01				                //병합할 브랜치를 지정하며 병합                                      

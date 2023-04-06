@@ -38,16 +38,16 @@ git pull origin <branch name>                                   //특정 브랜�
 
 #commit
 git init						        //해당폴더를 로컬저장소로 지정
-git add [파일이름]					             //커밋하기 위한 파일을 인덱스에 추가
-git add .                                               	 //업데이트된 파일 전부를 인덱스에 추가
+git add [파일이름]					        //커밋하기 위한 파일을 인덱스에 추가
+git add .                                                       //업데이트된 파일 전부를 인덱스에 추가
 git commit -m "comments to add"			                //인덱스에 추가된 파일을 부가설명과 함께 커밋
 git status						        //커밋된 저장소의 정보 전달
 
 #remote
-git remote add origin [원격저장소 주소]			  //원격저장소의 정보를 전달
+git remote add origin [원격저장소 주소]			        //원격저장소의 정보를 전달
 git remote                                            		//원격 저장소의 이름 목록을 표시
 git remote -v                                         		//원격 저장소에 대한 자세한 목록 보기
-git remote rm [원격저장소 이름]                        	  //원격 저장소 제거
+git remote rm [원격저장소 이름]                        	        //원격 저장소 제거
 
 #branch & push
 git push origin master				                //커밋한 내용을 master브랜치에 푸쉬

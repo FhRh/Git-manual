@@ -68,6 +68,13 @@ git clone https://github.com/FhRh/Git-manual.git           	//원격저장소를
 git remote set-url origin {remote git 주소 복사}                //인증 권한을 부여받을 수 있다.
 
 
+브랜치 이동에 관해
+-checkout을 사용해 브랜치를 이동하면 로컬 저장소 내에서 커밋된 저장소의 내용을 가져온다.
+-git ls-files를 사용하면 현재 브랜치의 로컬 저장소에 어떤 파일들이 커밋되어 있는지 확인할 수 있다.
+-로컬 저장소의 내용을 가져오고 싶다면 파일을 전부 삭제하고 git checkout . 명령어를 사용하자.
+-로컬 저장소와 원격 저장소는 완벽히 분리되어 있다.
+
+
 
 
 ㄴ

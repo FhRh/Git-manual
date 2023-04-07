@@ -17,19 +17,14 @@
 1. git branch					                //현재 브랜치 목록을 살펴본다.(현재 위치한 브랜치에는 *가 붙는다.)
 2. git checkout -b subdir01				        //subdir01인 브랜치를 생성함과 동시에 이동	
 3. git branch					                //잘 생성되었는지 확인
-4. git add [파일이름]					        //커밋할 파일 지정
-5. git commit -m "comments t oadd"			        //커밋
-6. git push origin subdir01				        //푸쉬 (푸쉬할때는 브랜치의 이름을 지정하는것으로 함)
+4. git add [파일이름]					        //스테이징 영역에 커밋할 파일 지정
+5. git commit -m "comments t oadd"			        //로컬 저장소에 커밋
+6. git push origin subdir01				        //원격 저장소에 푸쉬 (푸쉬할때는 브랜치의 이름을 지정하는것으로 함)
 
 브랜치에서 풀
-git checkout subdir01 				                //pull하기 위한 브랜치로 이동	
+git checkout subdir01 				                //pull하기 위한 브랜치로 이동
 git pull						        //위치해있는 폴더에 지정한 브랜치의 파일을 가져옴
-git pull origin <branch name>                                   //특정 브랜치를 pull
-
-원격저장소의 브랜치를 그대로 가져오기
-1.폴더를 비운다.
-2.git reset --hard HEAD                                         //로컬저장소의 추적을 끊음
-3.git pull origin [branch name]                                 //원격저장소의 특정 브랜치를 그대로 가져옴
+git pull origin <branch name>                                   //원격저장소의 특정 브랜치와 현재 로컬저장소의 브랜치를 병합하여 변경된 내역만 작업디렉토리에 추가한다.
 
 브랜치 병합
 1. git checkout master				                //병합의 기준이될 브랜치로 이동
@@ -54,7 +49,8 @@ git push origin master				                //커밋한 내용을 master브랜치�
 git branch						        //현재 브랜치목록 표시
 git branch -r                                                   //해당 원격저장소의 다른 브랜치목록을 모두 표시
 git branch subdir01					        //subdir01라는 이름의 브랜치 생성
-git checkout subdir01				                //subdir01브랜치로 이동
+git checkout subdir01				                //subdir01브랜치로 이동(원격 저장소에 있으면 해당 브랜치로 이동하며 파일을 워킹 디렉토리에 그대로 가져옴)
+                                                                //근본적으로는 로컬 저장소 내에서 브랜치 이동을 수행한다.
 git checkout -b subdir01				        //subdir01브랜치를 생성하며 해당 위치로 이동
 git merge subdir01					        //현재 위치한 브랜치로 지정한 브랜치를 병합
 git branch -d subdir01				                //지정한 브랜치를 삭제
@@ -62,9 +58,11 @@ git push origin --delete [브랜치 이름]                          //원격저
 
 #add, commit, push취소
 git reset HEAD                                                  //add 전체 취소
-git reset --hard HEAD^                                          //commit 전체 취소
+git reset --hard HEAD^                                          //commit 취소, unstaged상태로 워킹디렉토리에서 삭제
+git reset --mixed HEAD^                                         //commit 취소, unstaged상태로 워킹디렉토리에 보존
+git reset --soft HEAD^                                          //commit 취소, staged상태로 워킹디렉토리에 보존
 
-git clone https://github.com/FhRh/Git-manual.git           	//기존 원격저장소를 위치한 로컬에 다운로드
+git clone https://github.com/FhRh/Git-manual.git           	//원격저장소를 위치한 로컬에 복사(브랜치 포함)
 
 403에러
 git remote set-url origin {remote git 주소 복사}                //인증 권한을 부여받을 수 있다.

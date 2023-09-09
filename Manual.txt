@@ -78,7 +78,7 @@ git remote set-url origin {remote git 주소 복사}                //인증 권
 	-이 때, 충돌이 발생하게 되면 차근 차근 수정하며 커밋하면 된다.
 	
 [Git 경고 메세지] LF will be replaced by CRLF in 해결 방안
-윈도우, DOS : git config --global core.autocrlf true
-Linux, MAC : git config --global core.autocrlf input
+git config --global core.autocrlf true				//윈도우, DOS
+git config --global core.autocrlf input				//Linux, MAC
 
 ㄴ

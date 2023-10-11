@@ -56,6 +56,11 @@ git reset --hard HEAD^                                          //commit 취소,
 git reset --mixed HEAD^                                         //commit 취소, unstaged상태로 워킹디렉토리에 보존
 git reset --soft HEAD^                                          //commit 취소, staged상태로 워킹디렉토리에 보존
 
+#commit 이동
+git reset --soft {hash}                                          //commit 취소, staged상태로 워킹디렉토리에 보존
+git reset --hard {hash}                                          //commit 취소, unstaged상태로 워킹디렉토리에서 삭제
+git reset HEAD~1						//n번째 뒤 커밋으로 이동
+
 git clone https://github.com/FhRh/Git-manual.git           	//원격저장소를 위치한 로컬에 복사(브랜치 포함)
 
 403에러
